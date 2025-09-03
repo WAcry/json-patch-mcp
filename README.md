@@ -1,4 +1,4 @@
-# MCP JSON Patch Utility
+# Json Patch MCP
 
 Apply RFC 6902 JSON Patch arrays to JSON files via MCP.
 
