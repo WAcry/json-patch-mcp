@@ -1,0 +1,33 @@
+﻿# Node.js
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+
+# Temporary folders
+_tmp-cjs/
+_tmp-esm/
+_tmp-esm2/
+_tmp-install/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+.idea/
+
+# MCP JSON Patch Utility
+# Ignore built artifacts and temp files
+wacry-json-patch-mcp-*.tgz
+

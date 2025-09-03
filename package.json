@@ -1,0 +1,54 @@
+{
+  "name": "@wacry/json-patch-mcp",
+  "version": "1.0.6",
+  "description": "MCP JSON Patch utility to apply RFC 6902 patches to JSON files with robust error mapping.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "json-patch-mcp": "./dist/cli.cjs"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsup src/index.ts src/cli.ts --format esm,cjs --dts --out-dir dist --sourcemap --target node20 --minify",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "json",
+    "json-patch",
+    "rfc6902",
+    "mcp",
+    "ai",
+    "node"
+  ],
+  "author": "WAcry",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "fast-json-patch": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
