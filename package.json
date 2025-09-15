@@ -1,6 +1,6 @@
 {
   "name": "@wacry/json-patch-mcp",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "MCP JSON Patch utility to apply RFC 6902 patches to JSON files with robust error mapping.",
   "type": "module",
   "exports": {
@@ -16,7 +16,8 @@
     "node": ">=20"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist",

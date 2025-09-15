@@ -24,7 +24,7 @@ export type ServiceErrorCode =
 
 export interface ApplyPatchParams {
   filePath: string;
-  patches: ReadonlyArray<any>;
+  patches: ReadonlyArray<import('fast-json-patch').Operation>;
 }
 
 
